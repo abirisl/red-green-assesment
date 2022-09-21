@@ -5,13 +5,22 @@ import DonutChart from './DonutChart';
 
 const SalesChart = () => {
     return (
+        <Row style={{ marginTop: 12 }}
+            gutter={{
 
-        <div style={{display: 'flex',gap:10}}>
-            <Card><LineChart /></Card>
+                lg: 12,
+            }}
+        >
+            <Col span={15}>
+                <Card><LineChart /></Card>
 
-            <Card> <DonutChart /></Card>
+            </Col>
+            <Col span={9}>
+                <Card> <DonutChart /></Card>
+            </Col>
+        </Row>
 
-        </div>
+
     );
 };
 

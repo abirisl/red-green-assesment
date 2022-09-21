@@ -166,9 +166,7 @@ const Dashboard = () => {
                             </div>
                           <Row style={{marginTop:12}}
                           gutter={{
-                            xs: 8,
-                            sm: 16,
-                            md: 12,
+                           
                             lg: 12,
                           }}
                           >

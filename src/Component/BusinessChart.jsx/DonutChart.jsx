@@ -44,9 +44,10 @@ const DonutChart = () => {
                     fontWeight: 500,
                     fontSize: '16px',
                     marginTop: 15,
+
                     lineHeight: '0px'
                 }}>Todays Sale</p>
-                <h4 style={{ fontSize: 24 }}>156</h4>
+                <h4 style={{ fontSize: 24, marginBottom: 50 }}>156</h4>
             </div>
             <ReactApexChart options={options} series={series} type="donut" width={350} />
         </div>
