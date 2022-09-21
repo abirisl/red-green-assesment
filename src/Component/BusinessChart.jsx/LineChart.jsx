@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { MoreOutlined } from '@ant-design/icons';
 
 const LineChart = () => {
 
@@ -39,10 +40,46 @@ const LineChart = () => {
 
 
   return (
-    
-          <div>
-            <ReactApexChart options={options2} series={series2} type="line" height={350} width={550} />
-          </div>
+
+    <div>
+     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <h1 style={{ fontSize: 24 }}>Total Sale</h1>
+                <div>
+                    <MoreOutlined style={{ fontSize: '22px' }} />
+                </div>
+            </div>
+      <div style={{ display: 'flex', marginTop: 40 }}>
+        <div>
+          <p style={{
+            fontFamily: 'poppins',
+            fontStyle: 'normal',
+            fontWeight: 500,
+            fontSize: '12px',
+            lineHeight: '0px'
+          }}>TV</p>
+          <h3>600.000</h3>
+          <p style={{
+            fontFamily: 'poppins',
+            fontStyle: 'normal',
+            fontWeight: 500,
+            fontSize: '16px',
+            marginTop: 30,
+            lineHeight: '0px'}}>Laptop</p>
+          <h3>1.200.000</h3>
+          <p style={{
+            fontFamily: 'poppins',
+            fontStyle: 'normal',
+            fontWeight: 500,
+            fontSize: '16px',
+            marginTop: 30,
+            lineHeight: '0px'}}>Other</p>
+          <h3>210.287</h3>
+        </div>
+        <div style={{ paddingLeft: 50 }}>
+          <ReactApexChart options={options2} series={series2} type="line" height={270} width={480} />
+        </div>
+      </div >
+    </div >
 
   );
 };
